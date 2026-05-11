@@ -1,16 +1,49 @@
-# Edge AI-Assisted Medical Signal Analysis Platform
-*(Pulse-diagnosis System)*
+# Edge AI Medical Signal Analysis Platform
 
-## 💡 Project Overview
-This project is an edge-computing medical auxiliary system that combines Digital Signal Processing (DSP) and Large Language Models (LLM). It automatically reads and analyzes raw pulse wave data, quantifying subjective medical observations into objective physical metrics.
+A Python-based Edge AI system for medical pulse waveform analysis using digital signal processing (DSP) and real-time visualization.
 
-## 🛠️ Tech Stack
-* **Signal Processing:** Python, SciPy, NumPy (FFT, Butterworth Filter)
-* **AI & Agent:** LangChain, LangGraph, Ollama (Qwen2.5-14B), ChromaDB (RAG)
-* **Data Visualization:** Streamlit, Plotly
+---
 
-## 🚀 Key Features
-1. **Advanced Signal Filtering:** Implemented 50Hz Butterworth low-pass filters and detrending techniques to eliminate hardware noise.
-2. **Feature Extraction (FFT):** Applied Fast Fourier Transform to extract core frequency-domain parameters.
-3. **Multi-Agent Workflow:** Architected an AI workflow via LangGraph for logic verification and safety auditing, preventing AI hallucinations.
-4. **Edge Deployment:** 100% offline edge computing using Ollama for maximum data privacy.
+# Project Overview
+
+This project focuses on transforming raw pulse waveform signals into quantifiable digital features through signal processing and AI-assisted workflows.
+
+The system integrates:
+- FFT spectrum analysis
+- Noise filtering
+- Real-time visualization
+- Automated report generation
+- Local Edge AI deployment
+
+The platform is designed for offline execution to ensure privacy and low-latency processing.
+
+---
+
+# Features
+
+- FFT-based frequency spectrum analysis
+- Butterworth low-pass filtering
+- Signal detrending and noise reduction
+- HRV and spectral feature extraction
+- Real-time waveform visualization
+- Streamlit interactive dashboard
+- Local LLM-assisted workflow
+- Edge deployment using Ollama
+
+---
+
+# System Architecture
+
+```text
+Sensor Signal
+      ↓
+Signal Preprocessing
+(Filter / Detrend)
+      ↓
+FFT Feature Extraction
+      ↓
+Feature Analysis
+      ↓
+LLM Workflow
+      ↓
+Visualization Dashboard
