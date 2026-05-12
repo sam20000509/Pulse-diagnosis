@@ -35,15 +35,17 @@ The platform is designed for offline execution to ensure privacy and low-latency
 # System Architecture
 
 ```text
-Sensor Signal
-      ↓
-Signal Preprocessing
+Raw Pulse Signal
+        ↓
+Preprocessing
 (Filter / Detrend)
-      ↓
-FFT Feature Extraction
-      ↓
-Feature Analysis
-      ↓
-LLM Workflow
-      ↓
+        ↓
+FFT Analysis
+        ↓
+Feature Extraction
+        ↓
+AI Workflow
+        ↓
 Visualization Dashboard
+
+
