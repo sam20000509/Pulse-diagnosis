@@ -1,6 +1,7 @@
 # Medical Signal Analysis Platform
 
 Python project for pulse signal analysis using digital signal processing (DSP), FFT-based feature extraction, and data visualization.
+The project also includes an agent-based workflow for result review and report generation.
 
 ## Overview
 
